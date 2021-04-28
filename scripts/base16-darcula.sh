@@ -4,48 +4,50 @@
 # scheme: "Darcula"
 # author: "Matthias Brandt (github.com/PlusMinus0) based on Darcula theme by Konstantin Bulenkov (github.com/bulenkov/Darcula)"
 # TODO:  Can't upstream until https://github.com/bulenkov/Darcula/issues/48 is resolved.
+# Hmm. And here I've tweaked with some colors from https://github.com/vecheslav/darcula-solid
 #
-base00: "2B2B2B"  # Default Background
-base01: "323232"  # Lighter Background (Used for status bars)
-base02: "214283"  # Selection Background
-base03: "808080"  # Comments, Invisibles, Line Highlighting
-base04: "D0D0D0"  # Dark Foreground (Used for status bars)
-base05: "D8D8D8"  # Default Foreground, Caret, Delimiters, Operators
-base06: "E8E8E8"  # Light Foreground (Not often used)
-base07: "F8F8F8"  # Light Background (Not often used)
-base08: "79ABFF"  # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-base09: "9876AA"  # Integers, Boolean, Constants, XML Attributes, Markup Link Url
-base0A: "A9B7C6"  # Classes, Markup Bold, Search Text Background
-base0B: "A5C25C"  # Strings, Inherited Class, Markup Code, Diff Inserted
-base0C: "629755"  # Support, Regular Expressions, Escape Characters, Markup Quotes
-base0D: "FFC66D"  # Functions, Methods, Attribute IDs, Headings
-base0E: "CC7832"  # Keywords, Storage, Selector, Markup Italic, Diff Changed
-base0F: "D25252"  # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+base00="2B2B2B"  # Default Background
+base01="323232"  # Lighter Background (Used for status bars)
+base02="214283"  # Selection Background
+base03="808080"  # Comments, Invisibles, Line Highlighting
+base04="D0D0D0"  # Dark Foreground (Used for status bars)
+base05="D8D8D8"  # Default Foreground, Caret, Delimiters, Operators
+base06="E8E8E8"  # Light Foreground (Not often used)
+base07="F8F8F8"  # Light Background (Not often used)
+base08="79ABFF"  # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+base09="9876AA"  # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+base0A="a9b7c6"  # Classes, Markup Bold, Search Text Background
+base0B="A5C25C"  # Strings, Inherited Class, Markup Code, Diff Inserted
+base0C="629755"  # Support, Regular Expressions, Escape Characters, Markup Quotes
+base0D="FFC66D"  # Functions, Methods, Attribute IDs, Headings
+base0E="CC7832"  # Keywords, Storage, Selector, Markup Italic, Diff Changed
+base0F="D25252"  # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
 
-color00="28/2a/36" # Base 00 - Black
-color01="ff/5c/57" # Base 08 - Red
-color02="5a/f7/8e" # Base 0B - Green
-color03="f3/f9/9d" # Base 0A - Yellow
-color04="57/c7/ff" # Base 0D - Blue
-color05="ff/6a/c1" # Base 0E - Magenta
-color06="9a/ed/fe" # Base 0C - Cyan
-color07="e2/e4/e5" # Base 05 - White
-color08="78/78/7e" # Base 03 - Bright Black
-color09=$color01 # Base 08 - Bright Red
-color10=$color02 # Base 0B - Bright Green
-color11=$color03 # Base 0A - Bright Yellow
-color12=$color04 # Base 0D - Bright Blue
-color13=$color05 # Base 0E - Bright Magenta
-color14=$color06 # Base 0C - Bright Cyan
-color15="f1/f1/f0" # Base 07 - Bright White
-color16="ff/9f/43" # Base 09
-color17="b2/64/3c" # Base 0F
-color18="34/35/3e" # Base 01
-color19="43/45/4f" # Base 02
-color20="a5/a5/a9" # Base 04
-color21="ef/f0/eb" # Base 06
-color_foreground="e2/e4/e5" # Base 05
-color_background="28/2a/36" # Base 00
+# This color to base mapping is based on snazzy, not necc. Darcula.
+color00=$base00 # Base 00 - Black
+color01=$base08 # Base 08 - Red
+color02=$base0B # Base 0B - Green
+color03=$base0A # Base 0A - Yellow
+color04=$base0D # Base 0D - Blue
+color05=$base0E # Base 0E - Magenta
+color06=$base0C # Base 0C - Cyan
+color07=$base05 # Base 05 - White
+color08=$base03 # Base 03 - Bright Black
+color09=$base08 # Base 08 - Bright Red
+color10=$base0B # Base 0B - Bright Green
+color11=$base0A # Base 0A - Bright Yellow
+color12=$base0D # Base 0D - Bright Blue
+color13=$base0E # Base 0E - Bright Magenta
+color14=$base0C # Base 0C - Bright Cyan
+color15=$base07 # Base 07 - Bright White
+color16=$base09 # Base 09
+color17=$base0F # Base 0F
+color18=$base01 # Base 01
+color19=$base02 # Base 02
+color20=$base04 # Base 04
+color21=$base06 # Base 06
+color_foreground=$base05 # Base 05
+color_background=$base00 # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
